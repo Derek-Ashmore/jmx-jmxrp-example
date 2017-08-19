@@ -11,10 +11,12 @@ import javax.management.remote.JMXServiceURL;
  * Example Java application publishing a JMX port over the JMXRP protocol.
  * 
  * <p>The service URL should be of the format: <code>service:jmx:jmxmp://host:port</code></p>
+ * <p>Any JMX clients connecting via JMXMP must have a client implementation of the JMXMP protocol in their class path. The only one at 
+ * this time is <code>opendmk_jmxremote_optional_jar</code> available through Maven Central.</p>
  * @author D. Ashmore
  *
  */
-public class JMXRPApplication {
+public class JMXMPApplication {
 
   public static void main(String[] args) throws Exception {
     
